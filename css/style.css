@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+.alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Styling Time */
+.time{
+    border: 2px solid #dddddd;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+.time h1{
+    text-align: center;
+    padding: 1rem;
+    background-color: #515fff;
+    color: white;
+}
+.time span{
+    display: block;
+    padding: 1rem;
+    font-size: 5rem;
+    text-align: center;
+}
+.time p{
+    padding: 1rem;
+    padding-top: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+/* Styling Alerm */
+.clock{
+    display: flex;
+    padding: 6px 12px;
+    flex-wrap: wrap;
+}
+.alerm .btn{
+    display: block;
+    margin: auto;
+}
+
+/* Utility Classes */
+h1{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.btn{
+    background-color: #515fff;
+    padding: 11px 21px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: .9rem;
+}
+input{
+    width: 100%;
+    padding: 8px 13px;
+    margin: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 1rem;
+    transition: .3s;
+    width: 45%;
+    max-width: 100%;
+    flex-grow: 1;
+    min-width: 160px;
+}
+input.is-invalid{
+    border-color: #ff6767;
+}
+input:focus{
+    box-shadow: 0px 0px 6px 1px #6767ff;
+    border-color: transparent;
+}
+input.is-invalid:focus{
+    box-shadow: 0px 0px 6px 1px #ff6767;
+    border-color: #ff8484;
+}
+.alert{
+    padding: 21px;
+    margin-top: -60px;
+    transition: .5s;
+}
+.alert.active{
+    margin-top: 0px;
+}
+.success{
+    background-color: #7bd77b;
+}
+.warning{
+    background-color: #7bd77b;
+}
+/* Alert Box */
+.alermRingingContent{
+    background-color: white;
+    padding: 45px 23px;
+    border-radius: 12px;
+    border: 2px solid #757575;
+    position: relative;
+}
+.alermRingingContent img.alermDialogClose{
+    position: absolute;
+    width: 19px;
+    top: 6px;
+    right: 6px;
+    background: #abe8ff;
+    border-radius: 50%;
+}
+.alermRinging{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    min-width: 100vh;
+    min-height: 100vh;
+    background: rgb(65 65 65 / 38%);
+}
+
+@media(max-width: 768px){
+	.time span{
+		font-size: 4rem;
+	}
+}
