@@ -119,7 +119,7 @@ function alert(status, heading, message) {
     setTimeout(() => { alertBox.innerHTML = '' }, 5500);
 }
 
-let alermTone = new Audio('./music/Marcus Scotty  Lifting You by Sander Kleinenberg especially for NowPlaying.mp3');
+let alermTone = new Audio('./music/twirling-intime-lenovo-k8-note-alarm-tone-41440.mp3');
 function ringAlarm() {
     let timeInterval = setInterval(() => {
         if (alerm.getHours() == time.getHours() && alerm.getMinutes() == time.getMinutes() && alerm.getDate() == time.getDate() & alerm.getMonth() == time.getMonth() && alerm.getFullYear() == time.getFullYear()) {
